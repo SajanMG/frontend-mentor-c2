@@ -1,0 +1,236 @@
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+      body {
+        font-family: "Roboto", "sans-serif";
+        background-color: hsl(235, 18%, 26%);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      /* for mobile version */
+      @media screen and (max-width: 375px) {
+        .main-wrapper {
+          width: 375px;
+          min-height: 100vh;
+          display: grid;
+          align-items: center;
+          justify-content: center;
+          background-color: hsl(0, 0%, 100%);
+        }
+        .top-section{
+            width: 375px;
+            height: 284px;
+            background-image:url(images/mobile-svg.svg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .mid-section {
+          padding: 0px 20px;
+          line-height: 1.5rem;
+        }
+
+        .mid-section h1 {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+
+        .mid-section p {
+          font-size: 1rem;
+          font-weight: 400;
+        }
+
+        .mid-section ul li {
+          list-style: none;
+          line-height: 1.25rem;
+          height: 3rem;
+          gap: 0.4rem;
+          display: inline-flex;
+          justify-content: center;
+          font-size: 1rem;
+          margin-left: -2.5rem;
+        }
+        .mid-section ul li svg {
+          margin-right: 0.5rem;
+        }
+
+        #subscribe-form {
+          display: flex;
+          flex-direction: column;
+          padding: 0px 20px;
+          margin-top: -10px;
+          gap: 0.5rem;
+        }
+
+        #subscribe-form label {
+          font-size: 0.8rem;
+          font-weight: 700;
+        }
+        #subscribe-form input {
+          padding: 0.85rem;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+        }
+        #subscribe-form input::placeholder {
+          color: hsl(231, 7%, 60%);
+        }
+        .submission-btn {
+          margin-top: 10px;
+          background-color: hsl(234, 29%, 20%);
+          color: hsl(0, 0%, 100%);
+          border: none;
+          border-radius: 5px;
+          padding: 15px 20px;
+          font-size: 0.8rem;
+          font-weight: 700;
+        }
+        .success-section {
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+        }
+  
+        .success-section p {
+          font-size: 0.85rem;
+          line-height: 1.25rem;
+        }
+  
+        .btn-dismiss {
+          position: absolute;
+          bottom: 1rem;
+          /* margin-top: 10px; */
+          background-color: hsl(234, 29%, 20%);
+          color: hsl(0, 0%, 100%);
+          border: none;
+          border-radius: 5px;
+          width: 90%;
+          padding: 15px 20px;
+          font-size: 0.8rem;
+          font-weight: 700;
+        }
+      }
+
+      @media screen and (min-width:960px) {
+        .main-wrapper {
+            width:800px;
+            height: 550px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            margin: auto;
+            padding: 20px;
+            background-color: hsl(0, 0%, 100%);
+            border-radius: 30px;
+          }
+
+          .top-section{
+            width:50%;
+            height:auto;
+            background-image:url(images/desktop-svg.svg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 20px;
+        }
+
+        .for-desktop {
+            padding: 20px;
+            width:50%;
+        }
+
+        .mid-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+          }
+          .mid-section p {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5rem;
+          }
+
+          .mid-section ul li {
+            list-style: none;
+            line-height: 1.25rem;
+            height: 2rem;
+            gap: 0.4rem;
+            display: inline-flex;
+            justify-content: center;
+            font-size: 1rem;
+            margin-left: -2.5rem;
+          }
+          .mid-section ul li svg {
+            margin-right: 0.5rem;
+          }
+          #subscribe-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+          }
+
+          #subscribe-form label {
+            font-size: 0.8rem;
+            font-weight: 700;
+          }
+          #subscribe-form input {
+            padding: 0.85rem;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+          }
+          #subscribe-form input:hover{
+            cursor: pointer;
+          }
+          #subscribe-form input::placeholder {
+            color: hsl(231, 7%, 60%);
+          }
+          .submission-btn {
+            margin-top: 10px;
+            background-color: hsl(234, 29%, 20%);
+            color: hsl(0, 0%, 100%);
+            border: none;
+            border-radius: 5px;
+            padding: 15px 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+          }
+          .submission-btn:hover{
+            cursor: pointer;
+            background-color: lightcoral;
+            box-shadow: 0px 2px 20px lightcoral;
+          }
+
+          .success-section {
+            padding: 20px;
+            /* display: flex; */
+            justify-content: center;
+          }
+
+          .success-section h1 {
+            font-size: 3rem;
+            font-weight: 700;
+          }
+          .success-section p {
+            font-size: 0.9rem;
+            line-height: 1rem;
+          }
+          .btn-dismiss {
+            bottom: 1rem;
+            margin-top: 2rem;
+            background-color: hsl(234, 29%, 20%);
+            color: hsl(0, 0%, 100%);
+            border: none;
+            border-radius: 5px;
+            width: 90%;
+            padding: 15px 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+          }
+
+          .btn-dismiss:hover {
+            background-color: lightcoral;
+            cursor:pointer;
+            box-shadow: 0px 2px 20px lightcoral;
+          }
+      }
