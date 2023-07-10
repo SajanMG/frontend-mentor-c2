@@ -120,7 +120,7 @@
             display: flex;
             justify-content: space-between;
             flex-direction: row-reverse;
-            margin: auto;
+            margin: 10rem auto;
             padding: 20px;
             background-color: hsl(0, 0%, 100%);
             border-radius: 30px;
